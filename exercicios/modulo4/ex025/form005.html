@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="register.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sex</legend>
+            <input type="radio" name="sex" id="isxmas" value="M"> <label for="isex">Masculine</label> <br>
+            <input type="radio" name="sex" id="isxfem" value="F" checked> <label for="isex">Feminine</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Favorite sports</legend>
+            <input type="checkbox" name="spbas" id="ispbas" checked> <label for="ispbas">Basketball</label> <br>
+            <input type="checkbox" name="spsoc" id="ispsoc" checked> <label for="ispsoc">Soccer</label> <br>
+            <input type="checkbox" name="spswim" id="ispswi"> <label for="ispswi">Swimming</label> <br>
+            <input type="checkbox" name="spten" id="ispten"> <label for="ispten">Tenis</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clean">
+        </p>
+    </form>
+</body>
+</html>
