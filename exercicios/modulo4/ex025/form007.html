@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="register.php" method="post" autocomplete="on">
+        <p>
+            <label for="ista">State: </label>
+            <select name="state" id="ista">
+
+                <option value="" selected>--- Choose ---</option>
+                <optgroup label="group ex1">
+                    <option value="NSW">New South Wales</option>
+                    <option value="Queensland">Queensland</option>
+                    <option value="SA">South Australia</option>
+                </optgroup>
+
+                <optgroup label="group ex2">
+                    <option value="Tasmania">Tasmania</option>
+                    <option value="WA">Western Australia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="ioccup">Occupation: </label>
+            <input type="text" name="occup" id="ioccup" list="lstoccup">
+            <datalist id="lstoccup">
+                <option>Administrator</option>
+                <option>Accountant</option>
+                <option>Developer</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Message: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea> <!-- It is important use the method POST to avoid limitation matters -->
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clean">
+        </p>
+    </form>
+</body>
+</html>
