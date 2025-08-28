@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="register.php" method="post" autocomplete="on">
+        <p>
+            <label for="icolor">Color: </label>
+            <input type="color" name="color" value="#00ff00" id="icolor">
+        </p>
+
+        <p>
+            <label for="ilvl">Satisfaction Level: </label>
+            <input type="range" name="lvl" id="ilvl" min="1" max="5" value="2">
+        </p>
+
+        <p>
+            <label for="iphoto">Profile Photo: </label>
+            <input type="file" name="Photo" id="iphoto"> <!-- post method must be used when sending photos -->
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clean">
+        </p>
+    </form>
+</body>
+</html>
